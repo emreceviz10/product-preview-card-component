@@ -16,22 +16,34 @@ h2 {
 
 body {
   background-color: var(--clr-cream);
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .content {
   display: flex;
-  align-items: center;
-  background-color: aqua;
+  max-width: 700px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--clr-white);
+}
+
+.image {
   width: 50%;
-  gap: 2rem;
-  border-radius: 1rem;
 }
 
 .image img {
-  width: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .info {
@@ -39,14 +51,65 @@ body {
   flex-direction: column;
   background-color: var(--clr-white);
   width: 50%;
-  gap: 2rem;
+  padding: 2rem;
+  gap: 1rem;
 }
 
 .tagline {
+  letter-spacing: 0.5rem;
+  font-size: 1rem;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--clr-grey);
+}
+
+.current-price {
+  color: var(--clr-green-500);
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.old-price {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  letter-spacing: 0.5rem;
-  font-size: 1rem;
+  color: var(--clr-grey);
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+
+.price .current-price {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.btn {
+  background-color: var(--clr-green-500);
+  color: var(--clr-white);
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  border: none;
 }
