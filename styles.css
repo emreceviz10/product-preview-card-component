@@ -1,0 +1,52 @@
+:root {
+  --clr-green-500: hsl(158, 36%, 37%);
+  --clr-green-700: hsl(158, 42%, 18%);
+  --clr-black: hsl(212, 21%, 14%);
+  --clr-grey: hsl(228, 12%, 48%);
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+  width: 50%;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+
+.image img {
+  width: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-white);
+  width: 50%;
+  gap: 2rem;
+}
+
+.tagline {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.5rem;
+  font-size: 1rem;
+}
